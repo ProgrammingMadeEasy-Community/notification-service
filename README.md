@@ -7,7 +7,7 @@ This repository contains the codebase for a notification system, designed for PM
 * Emmanuel
   
 ## Components:
-![image](./assets/architecture.png)
+![image](.A/ssets/architecture.png)
 
 ### Notification API:
 * Built using Node.js with Express framework.
