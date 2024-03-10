@@ -7,6 +7,7 @@ This repository contains the codebase for a notification system, designed for PM
 * Emmanuel
   
 ## Components:
+![image](./assets/architecture.png)
 
 ### Notification API:
 * Built using Node.js with Express framework.
@@ -29,5 +30,3 @@ This repository contains the codebase for a notification system, designed for PM
 * The Notification Microservice receives the notification requests and enqueues them into a message queue.
 * Serverless functions  consume messages from the queue and send notifications using third-party services providers.
 * Notification status and metadata are logged in the database for tracking and retry purposes.
-
-![image](https://github.com/ProgrammingMadeEasy-Community/notification-service/assets/92952014/79d09f78-083a-48a9-a654-4b2185bfe41f)
