@@ -4,7 +4,7 @@ This repository contains the codebase for a notification system, designed for PM
 ## Team:
 * Emmanuel Adebayo
 * Oludayo
-* Emmanuel
+* Emmanuel Bolaji
   
 ## Components:
 We are implementing the [web-queue-worker](https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/web-queue-worker) architecture for building reliable services, our setup would look like this:
