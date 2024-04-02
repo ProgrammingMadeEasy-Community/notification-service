@@ -1,0 +1,26 @@
+{
+  "name": "notification-service",
+  "version": "1.0.0",
+  "description": "This repository contains the codebase for a notification system, designed for PME's photo editing and ordering app. Our notification system consists of several components working together to deliver notifications to users over three channels (SMS, Email, Push). The system is built using JavaScript and leverages cloud services for scalability and reliability.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProgrammingMadeEasy-Community/notification-service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProgrammingMadeEasy-Community/notification-service/issues"
+  },
+  "homepage": "https://github.com/ProgrammingMadeEasy-Community/notification-service#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.2.4"
+  }
+}
