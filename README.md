@@ -31,3 +31,26 @@ We are implementing the [web-queue-worker](https://learn.microsoft.com/en-us/azu
 * The Notification Microservice receives the notification requests and enqueues them into a message queue.
 * Serverless functions  consume messages from the queue and send notifications using third-party services providers.
 * Notification status and metadata are logged in the database for tracking and retry purposes.
+
+## Sample test:
+```bash
+curl -X POST http://localhost:3000/notifications -H 'Content-Type: application/json' -d '{
+  "userId": "user1",
+  "message": [
+    {
+      "sms": "Hello from SMS",
+      "phoneNumber": 1234567890
+    },
+    {
+      "email": "Hello from Email",
+      "emailAddress": "user1@example.com"
+    },
+    {
+      "pushText": "Hello from Push",
+      "deviceType": "Android"
+    }
+  ],
+  "status": "Pending",
+  "retryCount": 0
+}'
+![image]("./Assets/sampleOutput.png")
