@@ -14,7 +14,7 @@ const NotificationSchema = new mongoose.Schema({
       emailAddress: String,
     },
     {
-      push: String,
+      pushText: String,
       deviceType: String,
     },
   ],
