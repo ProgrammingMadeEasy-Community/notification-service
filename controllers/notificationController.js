@@ -18,18 +18,18 @@ exports.createNotification = async (req, res) => {
 
     for (const msg of message) {
       if (msg.sms && msg.phoneNumber) {
-        responseMessages.push(`SMS inner message ${msg.phoneNumber}: ${msg.sms}`);
-        await smsSender.sendMessages({ body: `SMS inner message ${msg.phoneNumber}: ${msg.sms}` });
+        responseMessages.push(`${msg.phoneNumber}: ${msg.sms}`);
+        await smsSender.sendMessages({ body: `${msg.phoneNumber}: ${msg.sms}` });
       }
 
       if (msg.email && msg.emailAddress) {
-        responseMessages.push(`Email message ${msg.emailAddress}: ${msg.email}`);
-        await emailSender.sendMessages({ body: `Email message ${msg.emailAddress}: ${msg.email}` });
+        responseMessages.push(`${msg.emailAddress}: ${msg.email}`);
+        await emailSender.sendMessages({ body: `${msg.emailAddress}: ${msg.email}` });
       }
 
       if (msg.pushText && msg.deviceType) {
-        responseMessages.push(`Push notif message ${msg.deviceType}: ${msg.pushText}`);
-        await pushSender.sendMessages({ body: `Push notif message ${msg.deviceType}: ${msg.pushText}` });
+        responseMessages.push(`${msg.deviceType}: ${msg.pushText}`);
+        await pushSender.sendMessages({ body: `${msg.deviceType}: ${msg.pushText}` });
       }
     }
 
