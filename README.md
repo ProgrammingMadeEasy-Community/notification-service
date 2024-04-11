@@ -36,7 +36,9 @@ We are implementing the [web-queue-worker](https://learn.microsoft.com/en-us/azu
 ```bash
 npm run start
 ```
-![image]("./Assets/runStart.png")
+
+![image](Assets/runStart.png)
+
 ```bash
 curl -X POST http://localhost:3000/notifications -H 'Content-Type: application/json' -d '{
   "userId": "user1",
@@ -58,4 +60,4 @@ curl -X POST http://localhost:3000/notifications -H 'Content-Type: application/j
   "retryCount": 0
 }'
 ```
-![image]("./Assets/sampleOutput.png")
+![image](Assets/sampleOutput.png)
