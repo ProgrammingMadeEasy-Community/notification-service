@@ -34,6 +34,8 @@ We are implementing the [web-queue-worker](https://learn.microsoft.com/en-us/azu
 
 ## Sample test:
 ```bash
+npm run start
+![image]("./Assets/runStart.png")
 curl -X POST http://localhost:3000/notifications -H 'Content-Type: application/json' -d '{
   "userId": "user1",
   "message": [
