@@ -33,7 +33,7 @@ exports.createNotification = async (req, res) => {
       }
     }
 
-    res.status(200).json({ messages: responseMessages });
+    res.status(202).json({ messages: responseMessages });
   } catch (err) {
     res.status(400).json({ message: err.message });
   } finally {
