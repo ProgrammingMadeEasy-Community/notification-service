@@ -24,4 +24,4 @@ This script is located in the path `notification-service/workers/smsworker/src/f
 * Uses the Twilio service to send SMS messages
 * The sender phone number is hard-coded for now as `'+12054908514'` (this is our Twilio trial account phone number)
 
-This script uses Azure Functions and Twilio to provide an SMS notification service. Messages are queued in a Service Bus Queue in the format ```json+{phoneNumber}: {message}```. When a message is added to the queue, this script is triggered to send an SMS to the phone number in the queued message.
+This script uses Azure Functions and Twilio to provide an SMS notification service. Messages are queued in a Service Bus Queue in the format `+{phoneNumber}: {message}`. When a message is added to the queue, this script is triggered to send an SMS to the phone number in the queued message.
