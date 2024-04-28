@@ -13,7 +13,7 @@ This script is located in the path `notification-service/workers/smsworker/src/f
 
 ### Functions
 `extractKeyValuePairs(inputString)`
-* Takes a string of key-value pairs in the format ```json+{phoneNumber}: {message}```
+* Takes a string of key-value pairs in the format ` +{phoneNumber}: {message}`
 * Returns an object with phone numbers as keys and messages as values.
   
 `app.serviceBusQueue(...)`
