@@ -7,7 +7,7 @@ const NotificationSchema = new mongoose.Schema({
   message: [
     {
       sms: String,
-      phoneNumber: Number,
+      phoneNumber: String,
     },
     {
       email: String,
