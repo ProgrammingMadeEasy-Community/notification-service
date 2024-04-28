@@ -2,7 +2,7 @@ const { app } = require('@azure/functions');
 const twilio = require('twilio');
 
 function extractKeyValuePairs(inputString) {
-    const regex = /(\+\d+):\s*(.*)/g; // Updated regex to include '+' and additional digits for country code
+    const regex = /(\+\d+):\s*(.*)/g;
     const keyValuePairs = {};
     let match;
 
