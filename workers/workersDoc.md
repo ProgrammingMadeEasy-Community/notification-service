@@ -1,3 +1,5 @@
+[!image](Assets/notificationWorkers.jpg)
+
 # smsSender.js
 This script is located in the path `notification-service/workers/smsworker/src/functions/` in the ProgrammingMadeEasy-Community/notification-service repository. It is responsible for sending SMS messages using the Twilio service. The script is triggered by messages in a Service Bus Queue.
 
