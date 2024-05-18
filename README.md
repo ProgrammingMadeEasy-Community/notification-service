@@ -1,5 +1,8 @@
-# notification-service overview:
+# notification-service overview: 
 This repository contains the codebase for a notification system, designed for PME's photo editing and ordering app. Our notification system consists of several components working together to deliver notifications to users over three channels (SMS, Email, Push). The system is built using JavaScript and leverages cloud services for scalability and reliability.
+
+## API SPecification:
+https://www.notion.so/PME-notification-service-API-specification-f25d5da025c4453bb6f73db22a93f354
 
 ## Team:
 * Emmanuel Adebayo
