@@ -1,5 +1,5 @@
 {
-  "name": "email-worker",
+  "name": "",
   "version": "1.0.0",
   "description": "",
   "main": "src/functions/*.js",
@@ -7,12 +7,9 @@
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@azure/functions": "^4.4.0",
-    "mailgun": "^0.5.0"
+    "@azure/functions": "^4.0.0",
+    "mailgun-js": "^0.22.0"
   },
   "devDependencies": {
     "azure-functions-core-tools": "^4.x"

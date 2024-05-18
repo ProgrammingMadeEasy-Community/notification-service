@@ -2,7 +2,8 @@ const { app } = require('@azure/functions');
 const mailgun = require('mailgun-js');
 
 function extractKeyValuePairs(inputString) {
-  const regex = /(\+\d+):\s*(.*)/g;
+  const regex =
+    /(\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b):\s*(.*)/g;
   const keyValuePairs = {};
   let match;
 
@@ -24,15 +25,18 @@ app.serviceBusQueue('emailSender', {
     const mg = mailgun({ apiKey: apiKey, domain: domain });
 
     const keyValuePairs = extractKeyValuePairs(message); // Contains the message from queue email:message
+
     for (const email in keyValuePairs) {
       const emailMessage = keyValuePairs[email];
+
       try {
         const data = {
-          from: 'Excited User <akinpelu.dayo11@gmail.com>',
+          from: 'Excited User <mailgun@sandbox-123.mailgun.org>',
           to: email,
           subject: 'Hello',
-          text: emailMessage
+          html: emailMessage
         };
+        context.log(data);
         await mg.messages().send(data);
         context.log(`Email sent to ${email}: ${emailMessage}`);
       } catch (error) {
